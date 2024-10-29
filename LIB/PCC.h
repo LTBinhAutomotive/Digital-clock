@@ -1,0 +1,63 @@
+typedef struct
+{
+	volatile unsigned int FTFC;
+	volatile unsigned int DMAMUX;
+	char empty1[8];
+	volatile unsigned int FlexCAN0;
+	volatile unsigned int FlexCAN1;
+	volatile unsigned int FTM3;
+	volatile unsigned int ADC1;
+	char empty2[12];
+	volatile unsigned int FlexCAN2;
+	volatile unsigned int LPSPI0;
+	volatile unsigned int LPSPI1;
+	volatile unsigned int LPSPI2;
+	char empty3[8];
+	volatile unsigned int PDB1;
+	volatile unsigned int CRC;
+	char empty4[12];
+	volatile unsigned int PDB0;
+	volatile unsigned int LPIT_0;
+	volatile unsigned int FTM0;
+	volatile unsigned int FTM1;
+	volatile unsigned int FTM2;
+	volatile unsigned int ADC0;
+	char empty5[4];
+	volatile unsigned int RTC;
+	char empty6[8];
+	volatile unsigned int LPTMR0;
+	char empty7[32];
+	volatile unsigned int PortA;
+	volatile unsigned int PortB;
+	volatile unsigned int PortC;
+	volatile unsigned int PortD;
+	volatile unsigned int PortE;
+	char empty8[24];
+	volatile unsigned int SAI0;
+	volatile unsigned int SAI1;
+	char empty9[16];
+	volatile unsigned int FlexIO;
+	char empty10[24];
+	volatile unsigned int EWM;
+	char empty11[16];
+	volatile unsigned int LPI2C0;
+	volatile unsigned int LPI2C1;
+	char empty12[8];
+	volatile unsigned int LPUART0;
+	volatile unsigned int LPUART1;
+	volatile unsigned int LPUART2;
+	char empty13[4];
+	volatile unsigned int FTM4;
+	volatile unsigned int FTM5;
+	volatile unsigned int FTM6;
+	volatile unsigned int FTM7;
+	char empty14[4];
+	volatile unsigned int CMP0;
+	char empty15[8];
+	volatile unsigned int QSPI;
+	char empty16[8];
+	volatile unsigned int ENET;
+}PCC_PORT;
+
+#define PCC_PORT_BASE		0x40065080
+#define PCC  ((PCC_PORT*)PCC_PORT_BASE)
